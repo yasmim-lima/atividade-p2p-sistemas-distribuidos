@@ -252,6 +252,8 @@ controle de threads e comunicação entre peers.
 
 # 11. Repositório
 
-O código-fonte do projeto está disponível no GitHub:
+# 11. Repositório
 
-**[INSERIR LINK DO REPOSITÓRIO]**
+O código-fonte, os resultados e a documentação da atividade estão disponíveis no repositório GitHub:
+
+https://github.com/yasmim-lima/atividade-p2p-sistemas-distribuidos.git
