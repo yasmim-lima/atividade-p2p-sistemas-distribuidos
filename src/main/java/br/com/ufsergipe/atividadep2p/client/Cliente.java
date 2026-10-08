@@ -7,7 +7,7 @@ import java.net.Socket;
 public class Cliente {
 
     private static final String HOST = "localhost";
-    private static final int PORTA = 5000;
+    private static final int PORTA_PADRAO = 5000;
     private static final int BUFFER = 8192;
 
     public static void main(String[] args) {
@@ -17,7 +17,13 @@ public class Cliente {
 
         long inicio = System.nanoTime();
 
-        try (Socket socket = new Socket(HOST, PORTA);
+        int porta = PORTA_PADRAO;
+
+        if (args.length > 0) {
+            porta = Integer.parseInt(args[0]);
+        }
+
+        try (Socket socket = new Socket(HOST, porta);
              InputStream entrada = socket.getInputStream()) {
 
             int bytesLidos;
